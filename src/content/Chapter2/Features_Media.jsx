@@ -1,4 +1,5 @@
 import PageSlide from "../../components/PageSlide"
+import ReadMore from "../../components/ReadMore"
 
 export default function Features_Media({
   title,
@@ -13,8 +14,7 @@ export default function Features_Media({
       chapter={chapter}
       sectionId={sectionId}
     >
-      <div className="read-more">
-        <h4>Read more...</h4>
+      <ReadMore>
         <a
           href="https://css-tricks.com/the-new-css-media-query-range-syntax/
           "
@@ -22,7 +22,7 @@ export default function Features_Media({
         >
           The New CSS Media Query Range Syntax
         </a>
-      </div>
+      </ReadMore>
     </PageSlide>
   )
 }

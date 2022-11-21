@@ -1,4 +1,5 @@
 import PageSlide from "../../components/PageSlide"
+import ReadMore from "../../components/ReadMore"
 
 export default function Features_Transforms({
   title,
@@ -13,15 +14,12 @@ export default function Features_Transforms({
       chapter={chapter}
       sectionId={sectionId}
     >
-      <div>
-        <p>
-          Transform elements with the <strong>translate</strong>,{" "}
-          <strong>rotate</strong>, and <strong>scale</strong> properties
-        </p>
-      </div>
+      <p>
+        Transform elements with the <strong>translate</strong>,{" "}
+        <strong>rotate</strong>, and <strong>scale</strong> properties
+      </p>
 
-      <div className="read-more">
-        <h4>Read more...</h4>
+      <ReadMore>
         <a
           href="https://web.dev/css-individual-transform-properties/
           "
@@ -30,7 +28,7 @@ export default function Features_Transforms({
           Finer grained control over CSS transforms with individual transform
           properties
         </a>
-      </div>
+      </ReadMore>
     </PageSlide>
   )
 }

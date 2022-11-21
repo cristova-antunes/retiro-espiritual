@@ -2,6 +2,7 @@ import img from "../../assets/prints/where.png"
 import React, { useState } from "react"
 import FsLightbox from "fslightbox-react"
 import PageSlide from "../../components/PageSlide"
+import ReadMore from "../../components/ReadMore"
 
 export default function Features_Pseudo({
   title,
@@ -34,8 +35,8 @@ export default function Features_Pseudo({
         />
       </div>
       <FsLightbox toggler={toggler} sources={[img, img, img]} />
-      <div className="read-more">
-        <h4>Read more...</h4>
+
+      <ReadMore>
         <ul>
           <li>
             <a
@@ -64,7 +65,7 @@ export default function Features_Pseudo({
             </a>
           </li>
         </ul>
-      </div>
+      </ReadMore>
     </PageSlide>
   )
 }
