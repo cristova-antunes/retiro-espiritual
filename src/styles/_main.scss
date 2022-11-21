@@ -24,7 +24,7 @@ section {
     margin-bottom: var(--space-m);
   }
 
-  &.is--home h1 {
+  &:where(.is--home, .is--last) h1 {
     font-size: var(--font-size-xxxl);
   }
 
@@ -40,6 +40,10 @@ section {
 
   &.is--chapter h1 {
     font-size: var(--font-size-xxl);
+  }
+
+  &.is--last p {
+    font-size: var(--font-size-md);
   }
 
   &:where(.is--home, .is--chapter, .is--last) {

@@ -1,9 +1,9 @@
 export default function Thanks() {
   return (
     <section className="is--last">
-      <h1>Continuação!</h1>
-      <p>@Cristóvão Antunes</p>
-      <p>@Julius Miguel Caeser</p>
+      <h1>Ora, continuação!</h1>
+      <p className="margin-bottom-s">Cristóvão Antunes</p>
+      <p>Miguel Júlio</p>
     </section>
   )
 }

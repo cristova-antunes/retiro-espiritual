@@ -35,13 +35,13 @@ export default function Features_Transitions({
       chapter={chapter}
       sectionId={sectionId}
     >
-      <ul>
+      <ul className="margin-bottom-base">
         <li>Vanilla JavaScript and CSS</li>
         <li>
           Let the optimized browser API do all the heavy lifting In a nutshell
         </li>
       </ul>
-      <p>
+      <p className="margin-bottom-m">
         Shared Element Transitions API allows us to skip a lot of prep work by
         ensuring that both outgoing and incoming states are visually present at
         the same time.
@@ -52,8 +52,8 @@ export default function Features_Transitions({
           src="https://player.vimeo.com/video/757159297?h=af3bef93ab"
           width="640"
           height="360"
-          frameborder="0"
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
         ></iframe>
 
         <img
