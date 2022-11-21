@@ -21,3 +21,11 @@
 :where(h6, .heading6) {
   font-size: var(--font-size-h6);
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: var(--space-s);
+}

@@ -3,9 +3,9 @@ import { sectionConfigs } from "../constants"
 export default function Home() {
   return (
     <section className="is--index">
-      <h1>No menu</h1>
+      <h1 className="margin-bottom-xl">No menu</h1>
       <h2>{sectionConfigs.chapter1.title}</h2>
-      <ul>
+      <ul className="margin-bottom-m">
         <li>
           <a href={`#${sectionConfigs.chapter1.overview.id}`}>
             {sectionConfigs.chapter1.overview.subtitle}
