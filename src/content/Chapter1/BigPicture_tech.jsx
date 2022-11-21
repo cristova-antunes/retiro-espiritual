@@ -1,16 +1,24 @@
-export default function BigPicture_Tech() {
+import PageSlide from "../../components/PageSlide"
+
+export default function BigPicture_Tech({
+  title,
+  subtitle,
+  chapter,
+  sectionId,
+}) {
   return (
-    <section data-chapter="1" id="bigpicture_tech">
-      <h1>Big Picture</h1>
-      <h2>Tech</h2>
-      <div>
-        <ul>
-          <li>Novas frameworks & tools (Vite; Astro; Qwik; ...) </li>
-          <li>Client Side vs Server Side</li>
-          <li>Typescript FTW</li>
-          <li>Serverless (deploy, DB, …)</li>
-        </ul>
-      </div>
-    </section>
-  );
+    <PageSlide
+      title={title}
+      subtitle={subtitle}
+      chapter={chapter}
+      sectionId={sectionId}
+    >
+      <ul>
+        <li>Novas frameworks & tools (Vite; Astro; Qwik; ...) </li>
+        <li>Client Side vs Server Side</li>
+        <li>Typescript FTW</li>
+        <li>Serverless (deploy, DB, …)</li>
+      </ul>
+    </PageSlide>
+  )
 }

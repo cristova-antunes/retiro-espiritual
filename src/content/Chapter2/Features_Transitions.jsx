@@ -1,12 +1,17 @@
-export default function Features_Transitions() {
+import PageSlide from "../../components/PageSlide"
+
+export default function Features_Transitions({
+  title,
+  subtitle,
+  chapter,
+  sectionId,
+}) {
   return (
-    <section data-chapter="2" id="features_transitions">
-      <h1>Features</h1>
-      <h2>Shared Element Transitions API</h2>
-      <div>
-        <p>Is Where</p>
-        <p>Has</p>
-      </div>
-    </section>
-  );
+    <PageSlide
+      title={title}
+      subtitle={subtitle}
+      chapter={chapter}
+      sectionId={sectionId}
+    ></PageSlide>
+  )
 }

@@ -1,8 +1,18 @@
-export default function Features_Transforms() {
+import PageSlide from "../../components/PageSlide"
+
+export default function Features_Transforms({
+  title,
+  subtitle,
+  chapter,
+  sectionId,
+}) {
   return (
-    <section data-chapter="2" id="features_transforms">
-      <h1>Features</h1>
-      <h2>Transform syntax</h2>
+    <PageSlide
+      title={title}
+      subtitle={subtitle}
+      chapter={chapter}
+      sectionId={sectionId}
+    >
       <div>
         <p>
           Transform elements with the <strong>translate</strong>,{" "}
@@ -21,6 +31,6 @@ export default function Features_Transforms() {
           properties
         </a>
       </div>
-    </section>
-  );
+    </PageSlide>
+  )
 }

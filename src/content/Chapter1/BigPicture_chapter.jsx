@@ -1,7 +1,5 @@
-export default function BigPicture_Chapter() {
-  return (
-    <section className="is--chapter" data-chapter="1" id="bigpicture">
-      <h1>Big Picture</h1>
-    </section>
-  );
+import PageChapter from "../../components/PageChapter"
+
+export default function BigPicture_Chapter({ title, chapter }) {
+  return <PageChapter title={title} chapter={chapter} />
 }

@@ -1,40 +1,55 @@
+import { sectionConfigs } from "../constants"
+
 export default function Home() {
   return (
     <section className="is--index">
       <h1>No menu</h1>
-      <h2>Big Picture</h2>
+      <h2>{sectionConfigs.chapter1.title}</h2>
       <ul>
         <li>
-          <a href="#bigpicture_overview">Overview</a>
+          <a href={`#${sectionConfigs.chapter1.overview.id}`}>
+            {sectionConfigs.chapter1.overview.subtitle}
+          </a>
         </li>
         <li>
-          <a href="#bigpicture_tech">Tech</a>
+          <a href={`#${sectionConfigs.chapter1.tech.id}`}>
+            {sectionConfigs.chapter1.tech.subtitle}
+          </a>
         </li>
       </ul>
-      <h2>Tech Features</h2>
+      <h2>{sectionConfigs.chapter2.title}</h2>
       <ul>
         <li>
-          <a href="#features_is">:is() && :where()</a>
+          <a href={`#${sectionConfigs.chapter2.pseudo_classes.id}`}>
+            {sectionConfigs.chapter2.pseudo_classes.subtitle}
+          </a>
         </li>
         <li>
-          <a href="#features_has">:has()</a>
+          <a href={`#${sectionConfigs.chapter2.clamp.id}`}>
+            {sectionConfigs.chapter2.clamp.subtitle}
+          </a>
         </li>
         <li>
-          <a href="#features_clamp">Clamp</a>
+          <a href={`#${sectionConfigs.chapter2.logical_properties.id}`}>
+            {sectionConfigs.chapter2.logical_properties.subtitle}
+          </a>
         </li>
         <li>
-          <a href="#features_logical">Logical properties</a>
+          <a href={`#${sectionConfigs.chapter2.transform.id}`}>
+            {sectionConfigs.chapter2.transform.subtitle}
+          </a>
         </li>
         <li>
-          <a href="#features_transforms">Transform syntax</a>
+          <a href={`#${sectionConfigs.chapter2.media.id}`}>
+            {sectionConfigs.chapter2.media.subtitle}
+          </a>
         </li>
         <li>
-          <a href="#features_media">Media Queries syntax</a>
-        </li>
-        <li>
-          <a href="#features_transitions">Shared Element Transitions API</a>
+          <a href={`#${sectionConfigs.chapter2.transition.id}`}>
+            {sectionConfigs.chapter2.transition.subtitle}
+          </a>
         </li>
       </ul>
     </section>
-  );
+  )
 }

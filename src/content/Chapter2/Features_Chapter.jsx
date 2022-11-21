@@ -1,7 +1,5 @@
-export default function Features_Chapter() {
-  return (
-    <section className="is--chapter" data-chapter="2" id="features">
-      <h1>Features</h1>
-    </section>
-  );
+import PageChapter from "../../components/PageChapter"
+
+export default function Features_Chapter({ title, chapter }) {
+  return <PageChapter title={title} chapter={chapter} />
 }

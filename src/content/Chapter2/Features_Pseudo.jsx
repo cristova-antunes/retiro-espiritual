@@ -1,14 +1,23 @@
-import img from "../../assets/prints/where.png";
-import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
+import img from "../../assets/prints/where.png"
+import React, { useState } from "react"
+import FsLightbox from "fslightbox-react"
+import PageSlide from "../../components/PageSlide"
 
-export default function Features_Is() {
-  const [toggler, setToggler] = useState(false);
+export default function Features_Pseudo({
+  title,
+  subtitle,
+  chapter,
+  sectionId,
+}) {
+  const [toggler, setToggler] = useState(false)
 
   return (
-    <section data-chapter="2" id="features_is">
-      <h1>Features</h1>
-      <h2>Pseudo classes</h2>
+    <PageSlide
+      title={title}
+      subtitle={subtitle}
+      chapter={chapter}
+      sectionId={sectionId}
+    >
       <div>
         <img
           src={img}
@@ -56,6 +65,6 @@ export default function Features_Is() {
           </li>
         </ul>
       </div>
-    </section>
-  );
+    </PageSlide>
+  )
 }

@@ -1,9 +1,17 @@
-export default function BigPicture_Overview() {
+import PageSlide from "../../components/PageSlide"
+
+export default function BigPicture_Overview({
+  title,
+  subtitle,
+  chapter,
+  sectionId,
+}) {
   return (
-    <section data-chapter="1" id="bigpicture_overview">
-      <h1>Big Picture</h1>
-      <h2>Overview</h2>
-      <div>Content</div>
-    </section>
-  );
+    <PageSlide
+      title={title}
+      subtitle={subtitle}
+      chapter={chapter}
+      sectionId={sectionId}
+    ></PageSlide>
+  )
 }
