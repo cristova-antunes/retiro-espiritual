@@ -1,5 +1,8 @@
 import PageSlide from "../../components/PageSlide"
 import ReadMore from "../../components/ReadMore"
+import img_transform from "../../assets/prints/transform.png"
+import { useState } from "react"
+import LightboxWrapper from "../../components/LightboxWrapper"
 
 export default function Features_Transforms({
   title,
@@ -7,6 +10,16 @@ export default function Features_Transforms({
   chapter,
   sectionId,
 }) {
+  const [toggler, setToggler] = useState(false)
+
+  const images = [
+    {
+      src: img_transform,
+      loading: "lazy",
+      alt: "CSS Functions",
+    },
+  ]
+
   return (
     <PageSlide
       title={title}
@@ -18,6 +31,17 @@ export default function Features_Transforms({
         Transform elements with the <strong>translate</strong>,{" "}
         <strong>rotate</strong>, and <strong>scale</strong> properties
       </p>
+
+      <div className="section-images">
+        <img
+          src={img_transform}
+          alt="Imagem"
+          width={500}
+          onClick={() => setToggler((prev) => !prev)}
+        />
+      </div>
+
+      <LightboxWrapper isOpen={toggler} images={images} />
 
       <ReadMore>
         <a

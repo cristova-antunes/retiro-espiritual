@@ -16,7 +16,7 @@ export default function Features_Functions({
     {
       src: img_function,
       loading: "lazy",
-      alt: "Media queries",
+      alt: "CSS Functions",
     },
   ]
 
