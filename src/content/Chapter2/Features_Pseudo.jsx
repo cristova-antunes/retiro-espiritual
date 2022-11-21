@@ -1,10 +1,10 @@
 import img_where from "../../assets/prints/where.png"
 import img_has from "../../assets/prints/has.png"
 import img_not from "../../assets/prints/not.png"
-import React, { useState } from "react"
-import FsLightbox from "fslightbox-react"
 import PageSlide from "../../components/PageSlide"
 import ReadMore from "../../components/ReadMore"
+import { useState, useEffect } from "react"
+import LightboxWrapper from "../../components/LightboxWrapper"
 
 export default function Features_Pseudo({
   title,
@@ -13,6 +13,34 @@ export default function Features_Pseudo({
   sectionId,
 }) {
   const [toggler, setToggler] = useState(false)
+
+  const images = [
+    {
+      src: img_where,
+      loading: "lazy",
+      alt: "IS/Where",
+    },
+
+    {
+      src: img_has,
+      loading: "lazy",
+      alt: "Has",
+    },
+
+    {
+      src: img_not,
+      loading: "lazy",
+      alt: "Not",
+    },
+  ]
+
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        setToggler(false)
+      }
+    })
+  }, [])
 
   return (
     <PageSlide
@@ -26,25 +54,23 @@ export default function Features_Pseudo({
           src={img_where}
           alt="Imagem da pseudo class Where"
           width={500}
-          onClick={() => setToggler(!toggler)}
+          onClick={() => setToggler(true)}
         />
 
         <img
           src={img_not}
           alt="Imagem da pseudo class Where"
           width={500}
-          onClick={() => setToggler(!toggler)}
+          onClick={() => setToggler(true)}
         />
 
         <img
           src={img_has}
           alt="Imagem da pseudo class Where"
           width={500}
-          onClick={() => setToggler(!toggler)}
+          onClick={() => setToggler(true)}
         />
       </div>
-
-      <FsLightbox toggler={toggler} sources={[img_where, img_not, img_has]} />
 
       <ReadMore>
         <ul>

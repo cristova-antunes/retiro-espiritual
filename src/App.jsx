@@ -10,7 +10,7 @@ import Features_Pseudo from "./content/Chapter2/Features_Pseudo"
 import Features_Clamp from "./content/Chapter2/Features_Clamp"
 import Features_Transforms from "./content/Chapter2/Features_Transforms"
 import Features_Logical from "./content/Chapter2/Features_Logical"
-import Features_Media from "./content/Chapter2/Features_Media"
+import Features_Media from "./content/Chapter2/Features_Media.tjsx"
 import Features_Transitions from "./content/Chapter2/Features_Transitions"
 
 import Thanks from "./content/Chapter3/Thanks"

@@ -1,8 +1,8 @@
 import PageSlide from "../../components/PageSlide"
 import ReadMore from "../../components/ReadMore"
 import img_media from "../../assets/prints/media.png"
-import React, { useState } from "react"
-import FsLightbox from "fslightbox-react"
+import { useState, useEffect } from "react"
+import LightboxWrapper from "../../components/LightboxWrapper"
 
 export default function Features_Media({
   title,
@@ -11,6 +11,23 @@ export default function Features_Media({
   sectionId,
 }) {
   const [toggler, setToggler] = useState(false)
+
+  const images = [
+    {
+      src: img_media,
+      loading: "lazy",
+      alt: "Media queries",
+    },
+  ]
+
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        setToggler(false)
+      }
+    })
+  }, [])
+
   return (
     <PageSlide
       title={title}
@@ -23,11 +40,11 @@ export default function Features_Media({
           src={img_media}
           alt="Imagem de media queries"
           width={500}
-          onClick={() => setToggler(!toggler)}
+          onClick={() => setToggler(true)}
         />
       </div>
 
-      <FsLightbox toggler={toggler} sources={[img_media]} />
+      <LightboxWrapper isOpen={toggler} images={images} />
 
       <ReadMore>
         <a
