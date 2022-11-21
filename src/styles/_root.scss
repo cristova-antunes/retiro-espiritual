@@ -1,0 +1,79 @@
+:root {
+  //COLORS
+  --blue-dark: #4f60d2;
+  --blue-light: #4bdbc5;
+  --red: #e04232;
+  --pink: #eb84cd;
+  --yellow: #fcd200;
+  --green-light: #bad80a;
+  --green-dark: #6ea514;
+
+  --pure-black: #000;
+  --pure-white: #fff;
+
+  --gray-900: #1e1f27; //$charcoal && old gray: #1a1a1a
+  --gray-800: #2a2a33; //$panther
+  --gray-700: #35363e; //$midnight && old gray: #333
+  --gray-600: #404149; //$platinum
+  --gray-500: #5b5c64; //$shadow && old gray: #5c5c5c
+  --gray-400: #74757d; //$ash && old gray: #777
+  --gray-300: #94959d; //$steel && old gray: #999
+  --gray-200: #bbbcc4; //$smoke && old gray: #c3c3cf & #ccc
+  --gray-100: #dddee3; //$pearl && old gray: #E5E5E9 && #DDD
+  --gray-075: #efeff1; //$bone && old gray: #f2f2f3
+  --gray-050: #f7f7f8; //$chalk
+
+  //FONT SIZE
+  //Tamanhos para web. Valores atualizados para mobile & tablet no file typography.scss
+  --font-size-display: #{calc(42 / 16) + "rem"};
+  --font-size-h1: #{calc(32 / 16) + "rem"};
+  --font-size-h2: #{calc(28 / 16) + "rem"};
+  --font-size-h3: #{calc(26 / 16) + "rem"};
+  --font-size-h4: #{calc(22 / 16) + "rem"};
+  --font-size-h5: #{calc(20 / 16) + "rem"};
+  --font-size-h6: #{calc(18 / 16) + "rem"};
+  --font-size-base: #{calc(16 / 16) + "rem"};
+  --font-size-s: #{calc(14 / 16) + "rem"};
+  --font-size-xs: #{calc(12 / 16) + "rem"};
+
+  --font-medium: 500;
+
+  //ICON
+  --aria-label: "";
+  /* Space - Sizes */
+  --space-none: 0;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-base: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 40px;
+  --space-xxl: 48px;
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--gray-900);
+  background-color: var(--gray-050);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:where(html, body) {
+  overflow: hidden;
+}

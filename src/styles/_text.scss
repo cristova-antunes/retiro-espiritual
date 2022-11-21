@@ -1,0 +1,23 @@
+:where(h1, .heading1) {
+  font-size: var(--font-size-h1);
+}
+
+:where(h2, .heading2) {
+  font-size: var(--font-size-h2);
+}
+
+:where(h3, .heading3) {
+  font-size: var(--font-size-h3);
+}
+
+:where(h4, .heading4) {
+  font-size: var(--font-size-h4);
+}
+
+:where(h5, .heading5) {
+  font-size: var(--font-size-h5);
+}
+
+:where(h6, .heading6) {
+  font-size: var(--font-size-h6);
+}

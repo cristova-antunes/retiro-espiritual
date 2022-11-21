@@ -1,0 +1,16 @@
+main {
+  scroll-snap-type: y mandatory;
+  flex-flow: column nowrap;
+  overflow: auto;
+  height: 100vh;
+}
+
+section {
+  scroll-snap-align: center;
+  min-height: 100vh;
+  padding: var(--space-xl);
+
+  h1 {
+    margin-bottom: var(--space-m);
+  }
+}
