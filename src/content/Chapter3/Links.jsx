@@ -1,4 +1,4 @@
-export default function Template() {
+export default function Links() {
   return (
     <section>
       <h1>Title</h1>

@@ -11,6 +11,35 @@ section {
   padding: var(--space-xl);
 
   h1 {
+    margin-bottom: var(--space-s);
+  }
+
+  h2 {
     margin-bottom: var(--space-m);
+  }
+
+  &:where(.is--home, .is--chapter, .is--last) {
+    text-align: center;
+    display: grid;
+    place-content: center;
+  }
+
+  &:not(:where(.is--home, .is--last)).is--chapter {
+    background-color: var(--context-color);
+    color: var(--pure-white);
+  }
+
+  &:not(:where(.is--home, .is--last, .is--chapter)) {
+    h1 {
+      color: var(--context-color);
+    }
+  }
+
+  &[data-chapter="1"] {
+    --context-color: var(--blue-dark);
+  }
+
+  &[data-chapter="2"] {
+    --context-color: var(--green-light);
   }
 }

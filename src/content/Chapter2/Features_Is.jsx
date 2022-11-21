@@ -1,6 +1,6 @@
-export default function Features_PseudoClasses_Media() {
+export default function Features_PseudoClasses_Is() {
   return (
-    <section>
+    <section data-chapter="2">
       <h1>Features</h1>
       <h2>New pseudo classes</h2>
       <div>
