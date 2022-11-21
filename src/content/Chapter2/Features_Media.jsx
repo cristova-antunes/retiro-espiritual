@@ -20,6 +20,14 @@ export default function Features_Media({
     },
   ]
 
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        setToggler(false)
+      }
+    })
+  }, [])
+
   return (
     <PageSlide
       title={title}
@@ -27,25 +35,29 @@ export default function Features_Media({
       chapter={chapter}
       sectionId={sectionId}
     >
+      <p>É utilizado em cerca de 80% dos websites existentes.</p>
       <div className="section-images">
         <img
           src={img_media}
           alt="Imagem de media queries"
           width={500}
-          onClick={() => setToggler((prev) => !prev)}
+          onClick={() => setToggler(true)}
         />
       </div>
 
       <LightboxWrapper isOpen={toggler} images={images} />
 
       <ReadMore>
-        <a
-          href="https://css-tricks.com/the-new-css-media-query-range-syntax/
-          "
-          target="_blank"
-        >
-          The New CSS Media Query Range Syntax
-        </a>
+        <ul>
+          <li>
+            <a
+              href="https://css-tricks.com/the-new-css-media-query-range-syntax/"
+              target="_blank"
+            >
+              The New CSS Media Query Range Syntax
+            </a>
+          </li>
+        </ul>
       </ReadMore>
     </PageSlide>
   )

@@ -20,8 +20,26 @@ section {
     margin-bottom: var(--space-base);
   }
 
-  h2 {
+  &:not(.is--index) h2 {
     margin-bottom: var(--space-m);
+  }
+
+  &.is--home h1 {
+    font-size: var(--font-size-xxxl);
+  }
+
+  &.is--home h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  &.is--index {
+    li {
+      margin-bottom: 12px;
+    }
+  }
+
+  &.is--chapter h1 {
+    font-size: var(--font-size-xxl);
   }
 
   &:where(.is--home, .is--chapter, .is--last) {
@@ -71,4 +89,8 @@ section {
 
 .read-more {
   margin-top: auto;
+
+  h4 {
+    margin-bottom: var(--space-s);
+  }
 }

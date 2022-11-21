@@ -1,7 +1,7 @@
 import PageSlide from "../../components/PageSlide"
 import ReadMore from "../../components/ReadMore"
 import img_function from "../../assets/prints/functions.png"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import LightboxWrapper from "../../components/LightboxWrapper"
 
 export default function Features_Functions({
@@ -20,6 +20,14 @@ export default function Features_Functions({
     },
   ]
 
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        setToggler(false)
+      }
+    })
+  }, [])
+
   return (
     <PageSlide
       title={title}
@@ -32,7 +40,7 @@ export default function Features_Functions({
           src={img_function}
           alt="Imagem de media queries"
           width={500}
-          onClick={() => setToggler((prev) => !prev)}
+          onClick={() => setToggler(true)}
         />
       </div>
 

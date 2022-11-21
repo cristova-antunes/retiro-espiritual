@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <section className="is--index">
       <h1 className="margin-bottom-xl">No menu</h1>
-      <h2>{sectionConfigs.chapter1.title}</h2>
-      <ul className="margin-bottom-m">
+      <h2 className="margin-bottom-base">{sectionConfigs.chapter1.title}</h2>
+      <ul className="margin-bottom-l">
         <li>
           <a href={`#${sectionConfigs.chapter1.overview.id}`}>
             {sectionConfigs.chapter1.overview.subtitle}
@@ -17,8 +17,8 @@ export default function Home() {
           </a>
         </li>
       </ul>
-      <h2>{sectionConfigs.chapter2.title}</h2>
-      <ul>
+      <h2 className="margin-bottom-base">{sectionConfigs.chapter2.title}</h2>
+      <ul className="margin-bottom-l">
         <li>
           <a href={`#${sectionConfigs.chapter2.pseudo_classes.id}`}>
             {sectionConfigs.chapter2.pseudo_classes.subtitle}
@@ -42,6 +42,11 @@ export default function Home() {
         <li>
           <a href={`#${sectionConfigs.chapter2.media.id}`}>
             {sectionConfigs.chapter2.media.subtitle}
+          </a>
+        </li>
+        <li>
+          <a href={`#${sectionConfigs.chapter2.layers.id}`}>
+            {sectionConfigs.chapter2.layers.subtitle}
           </a>
         </li>
         <li>

@@ -1,7 +1,7 @@
 import PageSlide from "../../components/PageSlide"
 import ReadMore from "../../components/ReadMore"
 import img_transform from "../../assets/prints/transform.png"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import LightboxWrapper from "../../components/LightboxWrapper"
 
 export default function Features_Transforms({
@@ -20,6 +20,14 @@ export default function Features_Transforms({
     },
   ]
 
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        setToggler(false)
+      }
+    })
+  }, [])
+
   return (
     <PageSlide
       title={title}
@@ -37,7 +45,7 @@ export default function Features_Transforms({
           src={img_transform}
           alt="Imagem"
           width={500}
-          onClick={() => setToggler((prev) => !prev)}
+          onClick={() => setToggler(true)}
         />
       </div>
 

@@ -34,6 +34,14 @@ export default function Features_Pseudo({
     },
   ]
 
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        setToggler(false)
+      }
+    })
+  }, [])
+
   return (
     <PageSlide
       title={title}
@@ -41,26 +49,30 @@ export default function Features_Pseudo({
       chapter={chapter}
       sectionId={sectionId}
     >
+      <p>
+        O pseudo-selector :is() permite que que possamos escrever selector de
+        uma forma simples e concisa.
+      </p>
       <div className="section-images">
         <img
           src={img_where}
           alt="Imagem da pseudo class Where"
           width={500}
-          onClick={() => setToggler((prev) => !prev)}
+          onClick={() => setToggler(true)}
         />
 
         <img
           src={img_not}
           alt="Imagem da pseudo class Where"
           width={500}
-          onClick={() => setToggler((prev) => !prev)}
+          onClick={() => setToggler(true)}
         />
 
         <img
           src={img_has}
           alt="Imagem da pseudo class Where"
           width={500}
-          onClick={() => setToggler((prev) => !prev)}
+          onClick={() => setToggler(true)}
         />
       </div>
 

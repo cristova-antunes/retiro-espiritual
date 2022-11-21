@@ -97,3 +97,22 @@ body *:not(p) {
 .bar > p {
   font-size: clamp(2rem, 4vw + 1rem, 3rem);
 }
+
+
+/* OLD WAY */
+.foo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bar {
+  width: 100px;
+  height: 100px;
+}
+
+/* NEW WAY */
+.foo {
+  margin-inline: auto;
+  inline-size: 100px;
+  block-size: 100px;
+}
