@@ -85,3 +85,15 @@ body :not(div):not(span) {
 body *:not(p) {
   color: green;
 }
+
+.foo {
+  width: clamp(10vw,  20em, 100vw);
+}
+
+.bar {
+  width: clamp(min(10vw, 20rem), 300px, max(90vw, 55rem));
+}
+
+.bar > p {
+  font-size: clamp(2rem, 4vw + 1rem, 3rem);
+}

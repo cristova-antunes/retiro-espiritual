@@ -25,8 +25,8 @@ export default function Home() {
           </a>
         </li>
         <li>
-          <a href={`#${sectionConfigs.chapter2.clamp.id}`}>
-            {sectionConfigs.chapter2.clamp.subtitle}
+          <a href={`#${sectionConfigs.chapter2.functions.id}`}>
+            {sectionConfigs.chapter2.functions.subtitle}
           </a>
         </li>
         <li>

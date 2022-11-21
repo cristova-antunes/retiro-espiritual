@@ -1,10 +1,10 @@
 import PageSlide from "../../components/PageSlide"
 import ReadMore from "../../components/ReadMore"
-import img_media from "../../assets/prints/media.png"
-import { useState, useEffect } from "react"
+import img_function from "../../assets/prints/functions.png"
+import { useState } from "react"
 import LightboxWrapper from "../../components/LightboxWrapper"
 
-export default function Features_Media({
+export default function Features_Functions({
   title,
   subtitle,
   chapter,
@@ -14,7 +14,7 @@ export default function Features_Media({
 
   const images = [
     {
-      src: img_media,
+      src: img_function,
       loading: "lazy",
       alt: "Media queries",
     },
@@ -29,7 +29,7 @@ export default function Features_Media({
     >
       <div className="section-images">
         <img
-          src={img_media}
+          src={img_function}
           alt="Imagem de media queries"
           width={500}
           onClick={() => setToggler((prev) => !prev)}
@@ -39,13 +39,21 @@ export default function Features_Media({
       <LightboxWrapper isOpen={toggler} images={images} />
 
       <ReadMore>
-        <a
-          href="https://css-tricks.com/the-new-css-media-query-range-syntax/
-          "
-          target="_blank"
-        >
-          The New CSS Media Query Range Syntax
-        </a>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp"
+              target="_blank"
+            >
+              clamp()
+            </a>
+          </li>
+          <li>
+            <a href="https://www.fluid-type-scale.com/" target="_blank">
+              Fluid Type Scale Calculator
+            </a>
+          </li>
+        </ul>
       </ReadMore>
     </PageSlide>
   )

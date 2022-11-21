@@ -16,9 +16,9 @@ export const sectionConfigs = {
       id: "features_pseudoclasses",
       subtitle: "Pseudo classes",
     },
-    clamp: {
-      id: "features_clamp",
-      subtitle: "CSS Clamp",
+    functions: {
+      id: "features_functions",
+      subtitle: "CSS Functions",
     },
     logical_properties: {
       id: "features_logical_properties",
@@ -35,6 +35,10 @@ export const sectionConfigs = {
     media: {
       id: "features_media",
       subtitle: "Media Queries",
+    },
+    layers: {
+      id: "features_layers",
+      subtitle: "CSS Layers",
     },
   },
 }

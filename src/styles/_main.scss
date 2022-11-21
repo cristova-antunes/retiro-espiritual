@@ -3,6 +3,7 @@ main {
   flex-direction: row;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   height: 100vh;
   width: 100vw;
@@ -61,6 +62,11 @@ section {
   display: flex;
   gap: var(--space-base);
   flex-wrap: wrap;
+
+  & > img {
+    height: 30vh;
+    width: auto;
+  }
 }
 
 .read-more {

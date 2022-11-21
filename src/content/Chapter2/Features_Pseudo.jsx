@@ -34,14 +34,6 @@ export default function Features_Pseudo({
     },
   ]
 
-  useEffect(() => {
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        setToggler(false)
-      }
-    })
-  }, [])
-
   return (
     <PageSlide
       title={title}
@@ -54,21 +46,21 @@ export default function Features_Pseudo({
           src={img_where}
           alt="Imagem da pseudo class Where"
           width={500}
-          onClick={() => setToggler(true)}
+          onClick={() => setToggler((prev) => !prev)}
         />
 
         <img
           src={img_not}
           alt="Imagem da pseudo class Where"
           width={500}
-          onClick={() => setToggler(true)}
+          onClick={() => setToggler((prev) => !prev)}
         />
 
         <img
           src={img_has}
           alt="Imagem da pseudo class Where"
           width={500}
-          onClick={() => setToggler(true)}
+          onClick={() => setToggler((prev) => !prev)}
         />
       </div>
 

@@ -7,15 +7,17 @@ import BigPicture_Tech from "./content/Chapter1/BigPicture_tech"
 
 import Features_Chapter from "./content/Chapter2/Features_Chapter"
 import Features_Pseudo from "./content/Chapter2/Features_Pseudo"
-import Features_Clamp from "./content/Chapter2/Features_Clamp"
+import Features_Functions from "./content/Chapter2/Features_Functions"
 import Features_Transforms from "./content/Chapter2/Features_Transforms"
 import Features_Logical from "./content/Chapter2/Features_Logical"
 import Features_Media from "./content/Chapter2/Features_Media.jsx"
+
 import Features_Transitions from "./content/Chapter2/Features_Transitions"
 
 import Thanks from "./content/Chapter3/Thanks"
 
 import { sectionConfigs } from "./content/constants"
+import Features_Layers from "./content/Chapter2/Features_Layers"
 
 function App() {
   return (
@@ -44,10 +46,10 @@ function App() {
         sectionId={sectionConfigs.chapter2.pseudo_classes.id}
         chapter={2}
       />
-      <Features_Clamp
+      <Features_Functions
         title={sectionConfigs.chapter2.title}
-        subtitle={sectionConfigs.chapter2.clamp.subtitle}
-        sectionId={sectionConfigs.chapter2.clamp.id}
+        subtitle={sectionConfigs.chapter2.functions.subtitle}
+        sectionId={sectionConfigs.chapter2.functions.id}
         chapter={2}
       />
       <Features_Transforms
@@ -62,12 +64,21 @@ function App() {
         sectionId={sectionConfigs.chapter2.logical_properties.id}
         chapter={2}
       />
+
       <Features_Media
         title={sectionConfigs.chapter2.title}
         subtitle={sectionConfigs.chapter2.media.subtitle}
         sectionId={sectionConfigs.chapter2.media.id}
         chapter={2}
       />
+
+      <Features_Layers
+        title={sectionConfigs.chapter2.title}
+        subtitle={sectionConfigs.chapter2.layers.subtitle}
+        sectionId={sectionConfigs.chapter2.layers.id}
+        chapter={2}
+      />
+
       <Features_Transitions
         title={sectionConfigs.chapter2.title}
         subtitle={sectionConfigs.chapter2.transition.subtitle}

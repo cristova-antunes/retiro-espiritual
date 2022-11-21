@@ -1,6 +1,6 @@
 import PageSlide from "../../components/PageSlide"
 
-export default function Features_Clamp({
+export default function Features_Layers({
   title,
   subtitle,
   chapter,
