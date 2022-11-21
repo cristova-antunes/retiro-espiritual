@@ -72,6 +72,8 @@ export default function Features_Pseudo({
         />
       </div>
 
+      <LightboxWrapper isOpen={toggler} images={images} />
+
       <ReadMore>
         <ul>
           <li>
