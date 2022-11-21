@@ -20,6 +20,9 @@ export default function Home() {
           <a href="#features_has">:has()</a>
         </li>
         <li>
+          <a href="#features_clamp">Clamp</a>
+        </li>
+        <li>
           <a href="#features_logical">Logical properties</a>
         </li>
         <li>
