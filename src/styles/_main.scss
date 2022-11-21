@@ -12,6 +12,8 @@ section {
   scroll-snap-align: center;
   min-width: 100vw;
   padding: var(--space-l) var(--space-xl);
+  display: flex;
+  flex-direction: column;
 
   h1 {
     margin-bottom: var(--space-s);
@@ -47,4 +49,8 @@ section {
   &[data-chapter="2"] {
     --context-color: var(--green-light);
   }
+}
+
+.read-more {
+  margin-top: auto;
 }

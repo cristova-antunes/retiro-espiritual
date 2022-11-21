@@ -1,0 +1,59 @@
+/* OLD WAY */
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  color: var(--gray-10);
+}
+
+
+/* NEW WAY */
+.container :where(h1, h2, h3, h4, h5, h6) {
+  color: var(--gray-10);
+}
+
+.container :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--gray-10);
+}
+
+
+/* OLD WAY */
+/* When the browser is between 400px - 1000px */
+@media (min-width: 400px) and (max-width: 1000px) {
+  /* ... */
+}
+
+@media (min-width: 600px) {
+  .element {
+    /* ... */
+  }
+}
+
+
+/* NEW WAY */
+@media (400px <= width <= 1000px) {
+  /* ... */
+}
+
+@media (width >= 600px) {
+  .element {
+    /* ... */
+  }
+}
+
+/* OLD WAY */
+.target {
+  transform: translateX(50%) rotate(30deg) scale(1.2);
+  will-change: transform;
+}
+
+
+/* NEW WAY */
+.target {
+  translate: 50% 0;
+  rotate: 30deg;
+  scale: 1.2;
+  will-change: translate, rotate, scale;
+}
