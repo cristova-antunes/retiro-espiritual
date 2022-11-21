@@ -1,6 +1,6 @@
 export default function BigPicture_Tech() {
   return (
-    <section data-chapter="1">
+    <section data-chapter="1" id="bigpicture_tech">
       <h1>Big Picture</h1>
       <h2>Tech</h2>
       <div>

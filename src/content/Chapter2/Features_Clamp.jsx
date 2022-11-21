@@ -1,4 +1,4 @@
-export default function Features_PseudoClasses_Clamp() {
+export default function Features_Clamp() {
   return (
     <section data-chapter="2">
       <h1>Features</h1>

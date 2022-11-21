@@ -1,6 +1,6 @@
-export default function Features_PseudoClasses_Transitions() {
+export default function Features_Transitions() {
   return (
-    <section data-chapter="2">
+    <section data-chapter="2" id="features_transitions">
       <h1>Features</h1>
       <h2>New pseudo classes</h2>
       <div>
