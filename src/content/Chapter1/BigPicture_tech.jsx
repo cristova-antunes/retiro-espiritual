@@ -25,9 +25,7 @@ export default function BigPicture_Tech1({
         <img src={stacks_logo} alt="logo vite" height={250} />
       </div>
 
-      <h4 className="margin-bottom-m">
-        Novas frameworks & tools (Vite; Astro; Qwik; ...)
-      </h4>
+      <h4 className="margin-bottom-m">Novas frameworks & tools</h4>
       <div className="section-stacks">
         <img src={vite_logo} alt="logo vite" height={150} />
         <img src={qwik_logo} alt="logo qwik" height={150} />

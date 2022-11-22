@@ -3,7 +3,7 @@ import ReadMore from "../../components/ReadMore"
 import img_layer1 from "../../assets/prints/layers-001.png"
 import img_layer2 from "../../assets/prints/layers-002.png"
 import img_layer3 from "../../assets/prints/layers-003.png"
-import img_layer4 from "../../assets/prints/layers-003.png"
+import img_layer4 from "../../assets/prints/layers-004.jpeg"
 import { useState, useEffect } from "react"
 import LightboxWrapper from "../../components/LightboxWrapper"
 
