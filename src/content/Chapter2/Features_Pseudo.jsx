@@ -50,8 +50,8 @@ export default function Features_Pseudo({
       sectionId={sectionId}
     >
       <p>
-        O pseudo-selector :is() permite que que possamos escrever selector de
-        uma forma simples e concisa.
+        A pseudo-class :is() permite que que possamos escrever selector de uma
+        forma simples e concisa.
       </p>
       <div className="section-images">
         <img
