@@ -1,4 +1,5 @@
 import PageSlide from "../../components/PageSlide"
+import chart from "../../assets/chart.jpeg"
 
 export default function BigPicture_Overview({
   title,
@@ -12,6 +13,10 @@ export default function BigPicture_Overview({
       subtitle={subtitle}
       chapter={chapter}
       sectionId={sectionId}
-    ></PageSlide>
+    >
+      <div className="section-chart">
+        <img src={chart} alt="chart" height={600} />{" "}
+      </div>
+    </PageSlide>
   )
 }

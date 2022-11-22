@@ -4,6 +4,7 @@ import Index from "./content/Chapter0/Index"
 import BigPicture_Chapter from "./content/Chapter1/BigPicture_chapter"
 import BigPicture_Overview from "./content/Chapter1/BigPicture_overview"
 import BigPicture_Tech from "./content/Chapter1/BigPicture_tech"
+import BigPicture_Tech2 from "./content/Chapter1/BigPicture_tech2"
 
 import Features_Chapter from "./content/Chapter2/Features_Chapter"
 import Features_Pseudo from "./content/Chapter2/Features_Pseudo"
@@ -33,6 +34,12 @@ function App() {
         chapter={1}
       />
       <BigPicture_Tech
+        title={sectionConfigs.chapter1.title}
+        sectionId={sectionConfigs.chapter1.tech.id}
+        subtitle={sectionConfigs.chapter1.tech.subtitle}
+        chapter={1}
+      />
+      <BigPicture_Tech2
         title={sectionConfigs.chapter1.title}
         sectionId={sectionConfigs.chapter1.tech.id}
         subtitle={sectionConfigs.chapter1.tech.subtitle}
