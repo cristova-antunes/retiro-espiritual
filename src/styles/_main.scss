@@ -84,7 +84,7 @@ section {
   gap: var(--space-base);
   flex-wrap: wrap;
 
-  & > img {
+  & > :where(img, iframe) {
     height: 35vh;
     width: auto;
   }
@@ -98,9 +98,19 @@ section {
   }
 }
 
+.section-ssr {
+  img {
+    height: 30vh;
+  }
+}
+
 .section-stacks {
   display: flex;
   gap: var(--space-xl);
+
+  img {
+    height: 20vh;
+  }
 }
 
 .read-more {

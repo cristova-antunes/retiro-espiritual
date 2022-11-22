@@ -1,9 +1,9 @@
-import PageSlide from "../../components/PageSlide"
-import vite_logo from "../../assets/logos/vite.svg"
-import qwik_logo from "../../assets/logos/qwik.svg"
-import astro_logo from "../../assets/logos/astro.svg"
-import stacks_logo from "../../assets/stack.png"
-import typescript_logo from "../../assets/logos/ts.svg"
+import PageSlide from "../../components/PageSlide";
+import vite_logo from "../../assets/logos/vite.svg";
+import qwik_logo from "../../assets/logos/qwik.svg";
+import astro_logo from "../../assets/logos/astro.svg";
+import stacks_logo from "../../assets/stack.png";
+import typescript_logo from "../../assets/logos/ts.svg";
 
 export default function BigPicture_Tech1({
   title,
@@ -21,7 +21,7 @@ export default function BigPicture_Tech1({
       <h4 className="margin-bottom-m">
         Client Side Rendering vs Server Side Rendering vs Static Site Generation
       </h4>
-      <div className="margin-bottom-xxl">
+      <div className="margin-bottom-xxl section-ssr">
         <img src={stacks_logo} alt="logo vite" height={250} />
       </div>
 
@@ -32,5 +32,5 @@ export default function BigPicture_Tech1({
         <img src={astro_logo} alt="logo astro" height={150} />
       </div>
     </PageSlide>
-  )
+  );
 }
